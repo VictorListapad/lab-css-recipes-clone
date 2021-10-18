@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+  min-height: 75vh;
+  min-width: 100vw;
+  background: url(../images/apple-pie.jpg) center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  color: white;
+  font-size: 3rem;
+
+  font-weight: 300;
+}
+
+.section-center {
+  width: 80%;
+  margin: 0 10%;
+  font-weight: 100;
+}
+
+#backstory {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-evenly;
+  height: 35vh;
+  font-size: 1.5rem;
+}
+
+.cooking-img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cooking-img-container img {
+  object-fit: contain;
+  width: 50%;
+  height: 80%;
+}
+
+.divider {
+  width: 80%;
+  margin-left: 10%;
+  height: 2px;
+}
+
+#ingredients {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#recipe {
+  list-style-type: none;
+}
+
+#recipe > li::before {
+  content: "-";
+}
+
+#directions {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#directions > ol {
+  list-style: none;
+}
+
+ol {
+  counter-reset: list;
+}
+
+#directions > ol > li::before {
+  content: counter(list) ") ";
+  counter-increment: list;
+}
