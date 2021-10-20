@@ -30,22 +30,19 @@ header h1 {
 #backstory {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   justify-content: space-evenly;
   height: 35vh;
   font-size: 1.5rem;
 }
 
 .cooking-img-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  width: 50%;
 }
 
 .cooking-img-container img {
   object-fit: contain;
-  width: 50%;
-  height: 80%;
+  width: 100%;
 }
 
 .divider {
@@ -69,8 +66,12 @@ header h1 {
   content: "-";
 }
 
+#ingredients .cooking-img-container {
+  align-self: center;
+}
+
 #directions {
-  height: 40vh;
+  height: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
